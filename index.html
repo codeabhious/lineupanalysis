@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Lineup Projection App</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body>
+    <div class="container">
+        <div class="header">
+            <h3 class="text-muted">Lineup Projection App</h3>
+	    <h4 class = "text-muted">Specify Player,Team,Year</h4>
+	    <h4 class = "text-muted">Example: Kobe BryantLAL2012.0</h4>
+        <div class = "container" id = "button-frame" style = "background-color: #e5e5e5">
+	<form action = "/predictions" method="POST">
+		 Player 1:<br>
+  		<input type="text" name="player1"><br>
+  		Player 2:<br>
+  		<input type="text" name="player2"><br>
+		Player 3:<br>
+		<input type="text" name="player3"><br>
+		Player 4:<br>
+		<input type="text" name="player4"><br>
+		Player 5:<br>
+		<input type="text" name="player5"><br>
+            <p></p>
+            <button type = "submit" class = "btn btn-default">Predict!</button>
+        </form>
+	</div>
+		
+        <footer class="footer">
+            <p>&copy; Abhijit Brahme 2017</p>
+        </footer>
+ 
+    </div>
+
+</body>
+ 
+</html>

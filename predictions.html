@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Lineup Projection App</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body>
+    <div class="container">
+        <div class="header">
+            <h3 class="text-muted">Lineup Projection App</h3>
+        <div class = "container" id = "button-frame" style = "background-color: #e5e5e5">
+
+		<h3>Player 1</h3>
+
+
+        <form action = "/predictions" method = "POST" role = "form">
+					<div class="form-group">
+                    <h4>{{player1}}</h4>
+</div>
+
+					<h3>Player 2</h3>
+           <div class="form-group">
+                    <h4>{{player2}}</h4>
+            </div>
+<h3>Player 3</h3>
+           <div class="form-group">
+                    <h4>{{player3}}</h4>
+            </div>
+	<h3>Player 4</h3>
+           <div class="form-group">
+                    <h4>{{player4}}</h4>
+            </div>				
+<h3>Player 5</h3>
+           <div class="form-group">
+                    <h4>{{player5}}</h4>
+            </div>
+<h3>This lineup would outscore opposing lineups by:</h3>
+	<div class="form-group">
+		<h4>{{projection}}</h4>
+            <p></p>
+            
+        </form>
+	</div>
+		
+        <footer class="footer">
+            <p>&copy; Abhijit Brahme 2017</p>
+        </footer>
+ 
+    </div>
+ 
+</html>
